@@ -1,0 +1,18 @@
+.website-header {
+    background-color: #EEE;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.website-header .lists {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.website-header .lists a {
+    text-decoration: none;
+    font-size: 18px;
+}

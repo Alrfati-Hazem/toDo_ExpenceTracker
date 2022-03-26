@@ -1,0 +1,229 @@
+.expense-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 9px 2px 23px -7px rgb(0 0 0 / 55%);
+    -webkit-box-shadow: 9px 2px 23px -7px rgb(0 0 0 / 55%);
+    -moz-box-shadow: 9px 2px 23px -7px rgba(0,0,0,0.55);
+    
+}
+
+.expense-balance {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #1a1a1a;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 10px auto 40px auto;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expense-form-box {
+    width: 55%;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.expense-form-box input {
+   padding: 8px 5px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #888;
+    max-width: 260px;
+}
+
+.expense-form-box input:focus {
+    border-color: #0088ff;
+}
+
+.expense-form-box select {
+    min-width: 120px;
+} 
+
+.expense-form-box button {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.expense-form-box:nth-of-type(3) {
+    margin-top: 20px;
+}
+
+.expense-form-box button:nth-of-type(1)
+{
+    background-color: #1C8EF9;
+}
+.expense-form-box button:nth-of-type(2) {
+    background-color: #009688;
+}
+.expense-form-box button:nth-of-type(3) {
+    background-color: #DC3545;
+}
+
+.redColor {
+    color: rgb(255, 57, 57);
+}
+
+.greenColor {
+    color: #2adf2a;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+    margin: 20px 0 20px 0;
+}
+
+.invoice-list {
+    list-style-type: none;
+}
+
+.income-box,.expense-box {
+    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.income-list,.expense-list {
+    list-style-type: disc;
+    margin-top: 6px;
+    font-size: 16px;
+    margin-left: 40px;
+    font-weight: normal;
+}
+
+/* Table */
+
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+ visibility: hidden;
+ position: absolute;
+ width: 0;
+ height: 45px;
+ font-size: 1em;
+}
+
+th {
+  background: #215A8E;
+  color: #fff;
+}
+
+td:nth-child(1) {
+  background: #215A8E;
+  color: #fff;
+  border-radius: 1em 1em 0 0;
+}
+
+th, td {
+  padding: 0.3em;
+  text-align: center !important;
+}
+
+tr, td {
+  display: block;
+}
+
+td {
+  position: relative;
+  font-size: 0.9em;
+}
+
+td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 0;
+  padding-left: 1em;
+  font-weight: 600;
+  font-size: .5em;
+  text-transform: uppercase;
+}
+
+tr {
+  margin-bottom: 1.5em;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+  text-align: right;
+}
+
+tr:last-of-type {
+  margin-bottom: 0;
+}
+
+td:nth-child(n+2):nth-child(odd) {
+  background-color: #ddd;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  table {
+    max-width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+  }
+  
+  thead {
+    visibility: visible;
+    position: relative;
+  }
+  
+  th {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: .7em;
+  }
+  
+  tr {
+    display: table-row;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {
+  background-color: #ddd;
+}
+  
+  td {
+    display: table-cell;
+  }
+  
+  td::before {
+    content: none;
+  }
+  
+  td:nth-child(1) {
+    background: transparent;
+    color: #444;
+    border-radius: 0;
+  }
+  
+  td:nth-child(n+2):nth-child(odd) {
+    background-color: transparent;
+  }
+  
+}
